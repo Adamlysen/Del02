@@ -11,4 +11,24 @@ for (int i = 0; i < leksaker.Count; i++)
 }
 Console.ReadLine();
 
-while
+string text = "";
+
+while (text.ToLower() != "exit")
+{
+    Console.WriteLine("Cities:");
+    text = Console.ReadLine();
+
+    Cities.Add(text);
+    if (text.ToLower() != "exit")
+    {
+        Console.WriteLine("Added!");
+    }
+}
+
+foreach (string city in Cities)
+{
+    Console.WriteLine(city);
+
+}
+
+Console.ReadLine();
